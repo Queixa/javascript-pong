@@ -14,7 +14,7 @@ function draw(){
     //aqui vou por a cor da "mesa"
     background(255,182,193);
     //chamando a função
-    criabolinha(xBolinha, yBolinha, tamBolinha);
+    criaBolinha(xBolinha, yBolinha, tamBolinha);
 
 }
 
