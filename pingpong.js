@@ -2,6 +2,11 @@
 let xBolinha = 300;
 let yBolinha = 200;
 let tamBolinha = 25;
+let raioBolinha = tamBolinha/2;
+
+let xvelocidadeBolinha = 6;
+let yvelocidadeBolinha = 6;
+
 let xRaquete = 5;
 let yRaquete = 150;
 let larguraRaquete = 10;
@@ -18,11 +23,17 @@ function draw(){
     background(255,182,193);
     //chamando a função
     criaBolinha(xBolinha, yBolinha, tamBolinha);
+    movimentabolinha();
+    bolinhaBorda();
+    criaRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete);
+    movimentaRaquete();
+    colideRaquete();
 
 }
 
 //função bolinha
 function criabolinha(xBolinha, yBolinha, tamBolinha){
+    fill("red");
     circle (xBolinha, yBolinha, tamBolinha);
 }
 
